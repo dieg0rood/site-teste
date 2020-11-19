@@ -1,17 +1,36 @@
-#title, .subtitle, .posttitle, .posttext {
+/* CONFIGURACOES GERAIS TEXTO*/
+
+#title, .subtitle, .posttitle, .posttext, .topicpost {
     color: darkslategray;
     font-family: Verdana;
 }
 
+/*CONFIGURACOES GERAIS IMAGENS */
 
 img {
     border-radius: 8px;
     display: block;
     width: 50%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Teste com Overlay*/
+/* CONFIGURACOES ESPECIFICAS*/
+
+body {
+    background: #FFF;
+}
+
+
+/* CONFIGURACOES ESPECIFICAS*/
+
+.posttext {
+    background: lightgray;
+    padding: 20px;
+}
+
+/*TESTE COM OVERLAY*/
 
 .container {
     position: relative;
@@ -44,31 +63,24 @@ img {
     height: 100%;
   }
 
-  .overlaykawa {
+  .overlaykawa, .overlayducati {
     position: absolute;
     bottom: 100%;
-    left: 0;
+    left: 25%;
     right: 0;
-    background-color: #32cd32;
     opacity: 0.6;
     overflow: hidden;
     width: 50%;
     height: 0;
     transition: .5s ease;
+    border-radius: 8px;
   }
 
   .overlayducati {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
     background-color: #5f0000;
-    opacity: 0.6;
-    overflow: hidden;
-    width: 50%;
-    height: 0;
-    transition: .5s ease;
   }
-
+  .overlaykawa {
+    background-color: #32cd32;
+  }
   
   
